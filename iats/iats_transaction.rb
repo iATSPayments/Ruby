@@ -137,9 +137,7 @@ class IatsTransactionGateway
       # optional data in options :customer_ip_address,
       # :invoice_num,
       def refund(identification, options = {})
-		if options[:total].to_i > 0
-		   options[:total] = options[:total].to_i * -1
-		end
+		options[:total] = options[:total].to_f > 0 ? 0.0 - options[:total].to_f : options[:total].to_f
 		@is_process_url = true
 		hash = {
 		  total: options[:total],
@@ -311,9 +309,7 @@ class IatsTransactionGateway
 	  raise ArgumentError.new(mess)
 	end
 
-	if amount.to_i > 0
-  	   amount = amount.to_i * -1
-	end
+	amount = amount.to_f > 0 ? 0.0 - amount.to_f : amount.to_f
 	hash = {}
 	hash[:total] = amount
 	hash[:customerIPAddress] = options[:customerIPAddress]
@@ -401,9 +397,8 @@ class IatsTransactionGateway
 			mess = "Please provide the amount"
 			raise ArgumentError.new(mess)
 		end
-		if amount.to_i > 0
-			amount = amount.to_i * -1
-		end
+
+		amount = amount.to_f > 0 ? 0.0 - amount.to_f : amount.to_f
 		select_region(options)
 		hash = {}
 		hash[:total] = amount
