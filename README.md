@@ -79,6 +79,7 @@ gateway = IatsPayments.new(region: 'uk',
 res = gateway.purchase(3, card, options)
 
 // Verify successful call.
+
 if res["Envelope"]["Body"]["ProcessCreditCardV1Response"]["ProcessCreditCardV1Result"]["IATSRESPONSE"]["PROCESSRESULT"]["AUTHORIZATIONRESULT"]=~ /OK: 678594/
 	puts "Transaction has been done"
 end
