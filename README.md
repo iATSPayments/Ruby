@@ -13,6 +13,15 @@ iATS Web Services overview: http://home.iatspayments.com/sites/default/files/iat
 * NB! If you are already an iATS customer, please contact us to verify your Account settings
     * The Ruby wrapper requires certain features to be set up to your existing account
     * Please [contact us](http://home.iatspayments.com/iats-Ruby) with your Client Code
+    
+## Installation
+
+`$ git clone https://github.com/iATSPayments/Ruby.git`
+
+`$ cd Ruby/Gem/`
+
+`$ gem install iats_payments-0.0.1.gem`
+
 
 ## Components
 
@@ -38,3 +47,38 @@ also be used to refund transactions.
 
 The ReportLink service is used to generate transaction reports for the other services. Available reports include
 credit / debit card transactions, rejected transactions and returns.
+
+## Usage
+
+### Use Case 1 - ProcessLink - Making a transaction using existing credit card.
+
+Open the irb from terminal/command and provide the below details
+
+`$ irb`
+
+once your opened irb use the below details for your testing.
+
+require 'iats_payments'
+
+options = {:ip => '123.123.123.123',:email => 'iats@example.com',
+			:billing_address => { :first_name => 'Test', :last_name => 'Account', :phone => '555-555-5555',:address1 => '1234 Any Street',:address2 => '1234 Any Street',:city => 'City',:state => 'AP', :country => 'US', :zip => '1312423' },
+			:zip_code => 'ww'}
+			
+card = CreditCard.new(
+      month: '03',
+      year: Time.now.year + 1,
+      brand: 'visa',
+      number: '4222222222222220'
+    )
+    
+gateway = IatsPayments.new(region: 'uk',
+                            login: 'TEST88',
+                             password: 'TEST88')
+
+
+res = gateway.purchase(3, card, options)
+
+// Verify successful call.
+if res["Envelope"]["Body"]["ProcessCreditCardV1Response"]["ProcessCreditCardV1Result"]["IATSRESPONSE"]["PROCESSRESULT"]["AUTHORIZATIONRESULT"]=~ /OK: 678594/
+	puts "Transaction has been done"
+end
