@@ -54,34 +54,46 @@ credit / debit card transactions, rejected transactions and returns.
 
 Open the irb from terminal/command and follow the below steps.
 
-1)
 
+1) open irb
 ```
- `$ irb`
+$irb
 ```
 
-2) require 'iats_payments'
+2) associate the gem with irb
+```
+require 'iats_payments'
+```
 
-3) options = {:ip => '123.123.123.123',:email => 'iats@example.com',
-			:billing_address => { :first_name => 'Test', :last_name => 'Account', :phone => '555-555-5555',:address1 => '1234 Any Street',:address2 => '1234 Any Street',:city => 'City',:state => 'AP', :country => 'US', :zip => '1312423' },
+3) create a Hash as follows
+```
+options = {:ip => '123.123.123.123',:email => 'iats@example.com',
+    		:billing_address => { :first_name => 'Test', :last_name => 'Account', :phone => '555-555-5555',:address1 => '1234 Any Street',:address2 => '1234 Any Street',:city => 'City',:state => 'AP', :country => 'US', :zip => '1312423' },
 			:zip_code => 'ww'}
-			
-4) card = CreditCard.new(
+```			
+4) create an object for your credit card
+```
+card = CreditCard.new(
       month: '03',
       year: Time.now.year + 1,
       brand: 'visa',
       number: '4222222222222220'
     )
-    
-5) gateway = IatsPayments.new(region: 'uk',
+ ```   
+5) initialize gateway
+```
+gateway = IatsPayments.new(region: 'uk',
                             login: 'TEST88',
                              password: 'TEST88')
+```
 
-
-6) 		res = gateway.purchase(3, card, options)
-
-7) 		if res["Envelope"]["Body"]["ProcessCreditCardV1Response"]["ProcessCreditCardV1Result"]["IATSRESPONSE"]["PROCESSRESULT"]["AUTHORIZATIONRESULT"]=~ /OK: 678594/
-
+6) invoke service
+```
+res = gateway.purchase(3, card, options)
+```
+7) verify the response
+```
+if res["Envelope"]["Body"]["ProcessCreditCardV1Response"]["ProcessCreditCardV1Result"]["IATSRESPONSE"]["PROCESSRESULT"]["AUTHORIZATIONRESULT"]=~ /OK: 678594/
 		puts "Transaction has been done"
-	
-		end
+end
+```
