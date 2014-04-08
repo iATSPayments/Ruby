@@ -54,7 +54,11 @@ credit / debit card transactions, rejected transactions and returns.
 
 Open the irb from terminal/command and follow the below steps.
 
-1) `$ irb`
+1)
+
+```
+ `$ irb`
+```
 
 2) require 'iats_payments'
 
@@ -74,10 +78,10 @@ Open the irb from terminal/command and follow the below steps.
                              password: 'TEST88')
 
 
-6) res = gateway.purchase(3, card, options)
+6) 		res = gateway.purchase(3, card, options)
 
-7) if res["Envelope"]["Body"]["ProcessCreditCardV1Response"]["ProcessCreditCardV1Result"]["IATSRESPONSE"]["PROCESSRESULT"]["AUTHORIZATIONRESULT"]=~ /OK: 678594/
+7) 		if res["Envelope"]["Body"]["ProcessCreditCardV1Response"]["ProcessCreditCardV1Result"]["IATSRESPONSE"]["PROCESSRESULT"]["AUTHORIZATIONRESULT"]=~ /OK: 678594/
 
 		puts "Transaction has been done"
 	
-	end
+		end
