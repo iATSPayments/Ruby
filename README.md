@@ -18,6 +18,10 @@ iATS Web Services overview: http://home.iatspayments.com/sites/default/files/iat
 
 Execute below commands in command prompt or Terminal for installing GEM -
 
+`$ gem install soap4r`
+
+Once soap4r gem installed successfully. Execute the below commands.
+
 `$ git clone https://github.com/iATSPayments/Ruby.git`
 
 `$ cd Ruby/Gem/`
@@ -53,48 +57,50 @@ credit / debit card transactions, rejected transactions and returns.
 ## Usage
 
 ### Use Case 1 - ProcessLink - Transaction using a Credit Card    
-Open irb from terminal/command prompt and follow below steps to make the transaction  
 
+1) Create a Ruby file with name ProcessClient.rb.
 
-1) Open irb
-```
-$ irb
-```
-
-2) Associate GEM with the irb
+2) Associate your gem with ProcessClient by
 ```
 require 'iats_payments'
 ```
+3) Create an instance for ProcessLinkService as follows
 
-3) Create hash with customer details
+For NA region, create ProcessLinkService instance as shown below.
+```  
+service = ProcessLinkService.new(nil)
+                                OR
+service = ProcessLinkService.new("https://www.iatspayments.com/NetGate/ProcessLink.asmx");                        
+```    
+For UK region, create ProcessLinkService instance with UK region's endpoint as shown below.
+```        
+service = ProcessLinkService.new("https://www.uk.iatspayments.com/NetGate/ProcessLink.asmx");
 ```
-options = {:ip => '123.123.123.123',:email => 'iats@example.com',
-    		:billing_address => { :first_name => 'Test', :last_name => 'Account', :phone => '555-555-5555',:address1 => '1234 Any Street',:address2 => '1234 Any Street',:city => 'City',:state => 'AP', :country => 'US', :zip => '1312423' },
-			:zip_code => 'ww'}
+
+
+4) Create ProcessCreditCardV1 object and set with customer and card details
+```
+    processCard = ProcessCreditCardV1.new
+    processCard.agentCode = "TEST88"
+	processCard.password = "TEST88"
+	processCard.creditCardNum = "4222222222222220"
+	processCard.creditCardExpiry = "05/15"
+	processCard.cvv2 = "123"
+	processCard.mop = "VISA"
+	processCard.firstName = "Sreekanth"
+	processCard.lastName = "G"
+	processCard.address = "Uppal"
+	processCard.city = "Hyd"
+	processCard.state = "AP"
+	processCard.zipCode = "1312"
+	processCard.total = "3"
+	processCard.comment = "Test"
 ```			
-4) Create Credit Card object with the card details
+5) Invoke the service and capture the response as follows
 ```
-card = CreditCard.new(
-      month: '03',
-      year: Time.now.year + 1,
-      brand: 'visa',
-      number: '4222222222222220'
-    )
+    response = service.processCreditCard(processCard)
  ```   
-5) Initialize gateway
+6) Verify response
 ```
-gateway = IatsPayments.new(region: 'uk',
-                            login: 'TEST88',
-                             password: 'TEST88')
-```
-
-6) Invoke service
-```
-res = gateway.purchase(3, card, options)
-```
-7) Verify response
-```
-if res["Envelope"]["Body"]["ProcessCreditCardV1Response"]["ProcessCreditCardV1Result"]["IATSRESPONSE"]["PROCESSRESULT"]["AUTHORIZATIONRESULT"]=~ /OK: 678594/
-		puts "Transaction has been completed successfully"
-end
+    puts response.PROCESSRESULT.TRANSACTIONID, "Generated Transaction Id"
 ```
