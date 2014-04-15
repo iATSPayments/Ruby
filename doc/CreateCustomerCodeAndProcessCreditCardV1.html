@@ -1,0 +1,1244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: CreateCustomerCodeAndProcessCreditCardV1
+  
+    &mdash; Documentation by YARD 0.8.7.4
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!CreateCustomerCodeAndProcessCreditCardV1.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (C)</a> &raquo;
+    
+    
+    <span class="title">CreateCustomerCodeAndProcessCreditCardV1</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: CreateCustomerCodeAndProcessCreditCardV1
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">CreateCustomerCodeAndProcessCreditCardV1</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/default.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p><a href="https://www.iatspayments.com/NetGate/" target="_parent" title="https://www.iatspayments.com/NetGate/">https://www.iatspayments.com/NetGate/</a>CreateCustomerCodeAndProcessCreditCardV1</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_agentCode'>agentCode</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span>
+<span class='id identifier rubyid_password'>password</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span>
+<span class='id identifier rubyid_customerIPAddress'>customerIPAddress</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span>
+<span class='id identifier rubyid_invoiceNum'>invoiceNum</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span>
+<span class='id identifier rubyid_ccNum'>ccNum</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span>
+<span class='id identifier rubyid_ccExp'>ccExp</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span>
+<span class='id identifier rubyid_firstName'>firstName</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span>
+<span class='id identifier rubyid_lastName'>lastName</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span>
+<span class='id identifier rubyid_address'>address</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span>
+<span class='id identifier rubyid_city'>city</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span>
+<span class='id identifier rubyid_state'>state</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span>
+<span class='id identifier rubyid_zipCode'>zipCode</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span>
+<span class='id identifier rubyid_cvv2'>cvv2</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span>
+<span class='id identifier rubyid_total'>total</span> <span class='op'>-</span> <span class='const'>SOAP</span><span class='op'>::</span><span class='const'>SOAPString</span></code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#address-instance_method" title="#address (instance method)">- (Object) <strong>address</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute address.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#agentCode-instance_method" title="#agentCode (instance method)">- (Object) <strong>agentCode</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute agentCode.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ccExp-instance_method" title="#ccExp (instance method)">- (Object) <strong>ccExp</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute ccExp.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ccNum-instance_method" title="#ccNum (instance method)">- (Object) <strong>ccNum</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute ccNum.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#city-instance_method" title="#city (instance method)">- (Object) <strong>city</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute city.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#customerIPAddress-instance_method" title="#customerIPAddress (instance method)">- (Object) <strong>customerIPAddress</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute customerIPAddress.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cvv2-instance_method" title="#cvv2 (instance method)">- (Object) <strong>cvv2</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute cvv2.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#firstName-instance_method" title="#firstName (instance method)">- (Object) <strong>firstName</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute firstName.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#invoiceNum-instance_method" title="#invoiceNum (instance method)">- (Object) <strong>invoiceNum</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute invoiceNum.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#lastName-instance_method" title="#lastName (instance method)">- (Object) <strong>lastName</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute lastName.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#password-instance_method" title="#password (instance method)">- (Object) <strong>password</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute password.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#state-instance_method" title="#state (instance method)">- (Object) <strong>state</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute state.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#total-instance_method" title="#total (instance method)">- (Object) <strong>total</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute total.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#zipCode-instance_method" title="#zipCode (instance method)">- (Object) <strong>zipCode</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute zipCode.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (CreateCustomerCodeAndProcessCreditCardV1) <strong>initialize</strong>(agentCode = nil, password = nil, customerIPAddress = nil, invoiceNum = nil, ccNum = nil, ccExp = nil, firstName = nil, lastName = nil, address = nil, city = nil, state = nil, zipCode = nil, cvv2 = nil, total = nil) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of CreateCustomerCodeAndProcessCreditCardV1.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="CreateCustomerCodeAndProcessCreditCardV1 (class)">CreateCustomerCodeAndProcessCreditCardV1</a></span></tt>) <strong>initialize</strong>(agentCode = nil, password = nil, customerIPAddress = nil, invoiceNum = nil, ccNum = nil, ccExp = nil, firstName = nil, lastName = nil, address = nil, city = nil, state = nil, zipCode = nil, cvv2 = nil, total = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of CreateCustomerCodeAndProcessCreditCardV1</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 36</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_agentCode'>agentCode</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_password'>password</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_customerIPAddress'>customerIPAddress</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_invoiceNum'>invoiceNum</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_ccNum'>ccNum</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_ccExp'>ccExp</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_firstName'>firstName</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_lastName'>lastName</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_address'>address</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_city'>city</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_state'>state</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_zipCode'>zipCode</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_cvv2'>cvv2</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_total'>total</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='ivar'>@agentCode</span> <span class='op'>=</span> <span class='id identifier rubyid_agentCode'>agentCode</span>
+  <span class='ivar'>@password</span> <span class='op'>=</span> <span class='id identifier rubyid_password'>password</span>
+  <span class='ivar'>@customerIPAddress</span> <span class='op'>=</span> <span class='id identifier rubyid_customerIPAddress'>customerIPAddress</span>
+  <span class='ivar'>@invoiceNum</span> <span class='op'>=</span> <span class='id identifier rubyid_invoiceNum'>invoiceNum</span>
+  <span class='ivar'>@ccNum</span> <span class='op'>=</span> <span class='id identifier rubyid_ccNum'>ccNum</span>
+  <span class='ivar'>@ccExp</span> <span class='op'>=</span> <span class='id identifier rubyid_ccExp'>ccExp</span>
+  <span class='ivar'>@firstName</span> <span class='op'>=</span> <span class='id identifier rubyid_firstName'>firstName</span>
+  <span class='ivar'>@lastName</span> <span class='op'>=</span> <span class='id identifier rubyid_lastName'>lastName</span>
+  <span class='ivar'>@address</span> <span class='op'>=</span> <span class='id identifier rubyid_address'>address</span>
+  <span class='ivar'>@city</span> <span class='op'>=</span> <span class='id identifier rubyid_city'>city</span>
+  <span class='ivar'>@state</span> <span class='op'>=</span> <span class='id identifier rubyid_state'>state</span>
+  <span class='ivar'>@zipCode</span> <span class='op'>=</span> <span class='id identifier rubyid_zipCode'>zipCode</span>
+  <span class='ivar'>@cvv2</span> <span class='op'>=</span> <span class='id identifier rubyid_cvv2'>cvv2</span>
+  <span class='ivar'>@total</span> <span class='op'>=</span> <span class='id identifier rubyid_total'>total</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="address=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="address-instance_method">
+  
+    - (<tt>Object</tt>) <strong>address</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute address</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 29</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_address'>address</span>
+  <span class='ivar'>@address</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="agentCode=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="agentCode-instance_method">
+  
+    - (<tt>Object</tt>) <strong>agentCode</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute agentCode</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 21</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_agentCode'>agentCode</span>
+  <span class='ivar'>@agentCode</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="ccExp=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="ccExp-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ccExp</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute ccExp</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+26
+27
+28</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 26</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ccExp'>ccExp</span>
+  <span class='ivar'>@ccExp</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="ccNum=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="ccNum-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ccNum</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute ccNum</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+25
+26
+27</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 25</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ccNum'>ccNum</span>
+  <span class='ivar'>@ccNum</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="city=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="city-instance_method">
+  
+    - (<tt>Object</tt>) <strong>city</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute city</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 30</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_city'>city</span>
+  <span class='ivar'>@city</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="customerIPAddress=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="customerIPAddress-instance_method">
+  
+    - (<tt>Object</tt>) <strong>customerIPAddress</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute customerIPAddress</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+23
+24
+25</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 23</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_customerIPAddress'>customerIPAddress</span>
+  <span class='ivar'>@customerIPAddress</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="cvv2=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="cvv2-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cvv2</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute cvv2</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+33
+34
+35</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 33</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cvv2'>cvv2</span>
+  <span class='ivar'>@cvv2</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="firstName=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="firstName-instance_method">
+  
+    - (<tt>Object</tt>) <strong>firstName</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute firstName</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+27
+28
+29</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 27</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_firstName'>firstName</span>
+  <span class='ivar'>@firstName</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="invoiceNum=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="invoiceNum-instance_method">
+  
+    - (<tt>Object</tt>) <strong>invoiceNum</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute invoiceNum</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+24
+25
+26</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 24</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_invoiceNum'>invoiceNum</span>
+  <span class='ivar'>@invoiceNum</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="lastName=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="lastName-instance_method">
+  
+    - (<tt>Object</tt>) <strong>lastName</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute lastName</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+28
+29
+30</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 28</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_lastName'>lastName</span>
+  <span class='ivar'>@lastName</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="password=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="password-instance_method">
+  
+    - (<tt>Object</tt>) <strong>password</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute password</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 22</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_password'>password</span>
+  <span class='ivar'>@password</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="state=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="state-instance_method">
+  
+    - (<tt>Object</tt>) <strong>state</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute state</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+31
+32
+33</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 31</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_state'>state</span>
+  <span class='ivar'>@state</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="total=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="total-instance_method">
+  
+    - (<tt>Object</tt>) <strong>total</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute total</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+34
+35
+36</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 34</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_total'>total</span>
+  <span class='ivar'>@total</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="zipCode=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="zipCode-instance_method">
+  
+    - (<tt>Object</tt>) <strong>zipCode</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute zipCode</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/default.rb', line 32</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_zipCode'>zipCode</span>
+  <span class='ivar'>@zipCode</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+</div>
+
+    <div id="footer">
+  Generated on Tue Apr 15 21:39:52 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.4 (ruby-2.1.0).
+</div>
+
+  </body>
+</html>

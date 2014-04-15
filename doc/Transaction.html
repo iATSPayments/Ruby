@@ -1,0 +1,1675 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Transaction
+  
+    &mdash; Documentation by YARD 0.8.7.4
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!Transaction.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (T)</a> &raquo;
+    
+    
+    <span class="title">Transaction</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Transaction
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Transaction</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/model/Transaction.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="transactions-classvariable" class="">@@transactions =
+          
+        </dt>
+        <dd><pre class="code"><span class='const'>Array</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ach-instance_method" title="#ach (instance method)">- (Object) <strong>ach</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute ach.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#agentCode-instance_method" title="#agentCode (instance method)">- (Object) <strong>agentCode</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute agentCode.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#amount-instance_method" title="#amount (instance method)">- (Object) <strong>amount</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute amount.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#anonymouslySent-instance_method" title="#anonymouslySent (instance method)">- (Object) <strong>anonymouslySent</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute anonymouslySent.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#comment-instance_method" title="#comment (instance method)">- (Object) <strong>comment</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute comment.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#creditCard-instance_method" title="#creditCard (instance method)">- (Object) <strong>creditCard</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute creditCard.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#customer-instance_method" title="#customer (instance method)">- (Object) <strong>customer</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute customer.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dateTime-instance_method" title="#dateTime (instance method)">- (Object) <strong>dateTime</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute dateTime.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#invoice-instance_method" title="#invoice (instance method)">- (Object) <strong>invoice</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute invoice.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#item1-instance_method" title="#item1 (instance method)">- (Object) <strong>item1</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute item1.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#item2-instance_method" title="#item2 (instance method)">- (Object) <strong>item2</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute item2.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#item3-instance_method" title="#item3 (instance method)">- (Object) <strong>item3</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute item3.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#item4-instance_method" title="#item4 (instance method)">- (Object) <strong>item4</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute item4.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#item5-instance_method" title="#item5 (instance method)">- (Object) <strong>item5</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute item5.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#item6-instance_method" title="#item6 (instance method)">- (Object) <strong>item6</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute item6.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#receivedEmail-instance_method" title="#receivedEmail (instance method)">- (Object) <strong>receivedEmail</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute receivedEmail.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#result-instance_method" title="#result (instance method)">- (Object) <strong>result</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute result.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#transactionId-instance_method" title="#transactionId (instance method)">- (Object) <strong>transactionId</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute transactionId.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#transactionType-instance_method" title="#transactionType (instance method)">- (Object) <strong>transactionType</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute transactionType.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#all_instances-class_method" title="all_instances (class method)">+ (Object) <strong>all_instances</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (Transaction) <strong>initialize</strong>(hash) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of Transaction.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="Transaction (class)">Transaction</a></span></tt>) <strong>initialize</strong>(hash) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of Transaction</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 30</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_hash'>hash</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_transaction'>transaction</span><span class='op'>|</span> 
+	<span class='ivar'>@transactionType</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>TNTYP</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@transactionId</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>TNID</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@agentCode</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>AGT</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+	<span class='kw'>unless</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>CST</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+		<span class='ivar'>@customer</span> <span class='op'>=</span> <span class='const'>Customer</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>CST</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>	
+	<span class='kw'>end</span>
+	
+	<span class='ivar'>@invoice</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>INV</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@dateTime</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DTM</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@receivedEmail</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>RM</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@anonymouslySent</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ANM</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@item1</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>IT1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@item2</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>IT2</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@item3</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>IT3</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@item4</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>IT4</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@item5</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>IT5</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@item6</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>IT6</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@amount</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>AMT</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@result</span> <span class='op'>=</span><span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>RST</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+	<span class='ivar'>@comment</span> <span class='op'>=</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>CM</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span>
+
+	<span class='kw'>unless</span> <span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ach</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+		<span class='ivar'>@ach</span> <span class='op'>=</span> <span class='const'>Ach</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_transaction'>transaction</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ach</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+	<span class='kw'>end</span>
+	<span class='cvar'>@@transactions</span> <span class='op'>&lt;&lt;</span> <span class='kw'>self</span>
+<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="ach=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="ach-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ach</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute ach</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+24
+25
+26</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 24</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ach'>ach</span>
+  <span class='ivar'>@ach</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="agentCode=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="agentCode-instance_method">
+  
+    - (<tt>Object</tt>) <strong>agentCode</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute agentCode</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8
+9
+10</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 8</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_agentCode'>agentCode</span>
+  <span class='ivar'>@agentCode</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="amount=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="amount-instance_method">
+  
+    - (<tt>Object</tt>) <strong>amount</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute amount</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 21</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_amount'>amount</span>
+  <span class='ivar'>@amount</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="anonymouslySent=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="anonymouslySent-instance_method">
+  
+    - (<tt>Object</tt>) <strong>anonymouslySent</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute anonymouslySent</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 14</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_anonymouslySent'>anonymouslySent</span>
+  <span class='ivar'>@anonymouslySent</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="comment=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="comment-instance_method">
+  
+    - (<tt>Object</tt>) <strong>comment</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute comment</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+23
+24
+25</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 23</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_comment'>comment</span>
+  <span class='ivar'>@comment</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="creditCard=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="creditCard-instance_method">
+  
+    - (<tt>Object</tt>) <strong>creditCard</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute creditCard</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+10
+11
+12</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 10</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_creditCard'>creditCard</span>
+  <span class='ivar'>@creditCard</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="customer=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="customer-instance_method">
+  
+    - (<tt>Object</tt>) <strong>customer</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute customer</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9
+10
+11</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 9</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_customer'>customer</span>
+  <span class='ivar'>@customer</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="dateTime=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="dateTime-instance_method">
+  
+    - (<tt>Object</tt>) <strong>dateTime</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute dateTime</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12
+13
+14</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 12</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_dateTime'>dateTime</span>
+  <span class='ivar'>@dateTime</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="invoice=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="invoice-instance_method">
+  
+    - (<tt>Object</tt>) <strong>invoice</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute invoice</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+11
+12
+13</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 11</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_invoice'>invoice</span>
+  <span class='ivar'>@invoice</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="item1=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="item1-instance_method">
+  
+    - (<tt>Object</tt>) <strong>item1</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute item1</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_item1'>item1</span>
+  <span class='ivar'>@item1</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="item2=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="item2-instance_method">
+  
+    - (<tt>Object</tt>) <strong>item2</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute item2</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+16
+17
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 16</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_item2'>item2</span>
+  <span class='ivar'>@item2</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="item3=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="item3-instance_method">
+  
+    - (<tt>Object</tt>) <strong>item3</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute item3</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 17</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_item3'>item3</span>
+  <span class='ivar'>@item3</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="item4=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="item4-instance_method">
+  
+    - (<tt>Object</tt>) <strong>item4</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute item4</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18
+19
+20</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 18</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_item4'>item4</span>
+  <span class='ivar'>@item4</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="item5=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="item5-instance_method">
+  
+    - (<tt>Object</tt>) <strong>item5</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute item5</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+19
+20
+21</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 19</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_item5'>item5</span>
+  <span class='ivar'>@item5</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="item6=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="item6-instance_method">
+  
+    - (<tt>Object</tt>) <strong>item6</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute item6</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20
+21
+22</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_item6'>item6</span>
+  <span class='ivar'>@item6</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="receivedEmail=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="receivedEmail-instance_method">
+  
+    - (<tt>Object</tt>) <strong>receivedEmail</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute receivedEmail</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13
+14
+15</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 13</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_receivedEmail'>receivedEmail</span>
+  <span class='ivar'>@receivedEmail</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="result=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="result-instance_method">
+  
+    - (<tt>Object</tt>) <strong>result</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute result</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 22</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_result'>result</span>
+  <span class='ivar'>@result</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="transactionId=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="transactionId-instance_method">
+  
+    - (<tt>Object</tt>) <strong>transactionId</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute transactionId</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7
+8
+9</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 7</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_transactionId'>transactionId</span>
+  <span class='ivar'>@transactionId</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="transactionType=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="transactionType-instance_method">
+  
+    - (<tt>Object</tt>) <strong>transactionType</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute transactionType</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+6
+7
+8</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 6</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_transactionType'>transactionType</span>
+  <span class='ivar'>@transactionType</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="all_instances-class_method">
+  
+    + (<tt>Object</tt>) <strong>all_instances</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+26
+27
+28</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/model/Transaction.rb', line 26</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_all_instances'>all_instances</span>
+  	<span class='cvar'>@@transactions</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Tue Apr 15 21:39:59 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.4 (ruby-2.1.0).
+</div>
+
+  </body>
+</html>

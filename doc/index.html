@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.8.7.4
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!file.README.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'>
+<h1 id="label-iATS+Ruby+API">iATS Ruby API</h1>
+
+<p>A Ruby wrapper for the iATS SOAP API.</p>
+
+<p>iATS Web Services provides the facility to securely process payments using
+credit cards, ACH, or direct debit through your website or software.</p>
+
+<p>iATS Web Services overview: <a
+href="http://home.iatspayments.com/sites/default/files/iats_webservices_overview_version_4.0_0.pdf">home.iatspayments.com/sites/default/files/iats_webservices_overview_version_4.0_0.pdf</a></p>
+
+<h2 id="label-Requirements">Requirements</h2>
+<ul><li>
+<p>An account with <a href="http://www.iatspayments.com/">iATS Payments</a></p>
+<ul><li>
+<p><a href="http://home.iatspayments.com/iats-Ruby">Request an account</a></p>
+</li></ul>
+</li><li>
+<p>NB! If you are already an iATS customer, please contact us to verify your
+Account settings</p>
+<ul><li>
+<p>The Ruby wrapper requires certain features to be set up to your existing
+account</p>
+</li><li>
+<p>Please <a href="http://home.iatspayments.com/iats-Ruby">contact us</a> with
+your Client Code</p>
+</li></ul>
+</li></ul>
+
+<h2 id="label-Installation">Installation</h2>
+
+<p>Execute below commands in command prompt or Terminal for installing GEM -</p>
+
+<p><code>$ gem install soap4r</code></p>
+
+<p>Once soap4r gem installed successfully. Execute the below commands.</p>
+
+<p><code>$ git clone https://github.com/iATSPayments/Ruby.git</code></p>
+
+<p><code>$ cd Ruby/Gem/</code></p>
+
+<p><code>$ gem install iats_payments-0.0.1.gem</code></p>
+
+<h2 id="label-Components">Components</h2>
+
+<h3 id="label-CustomerLink">CustomerLink</h3>
+
+<p>The CustomerLink service is used to create and update customer records.
+CustomerLink may be used with the ProcessLink service to process single or
+recurring transactions for customers.</p>
+
+<p><strong>iATS documentation</strong> * Request / response overview: <a
+href="https://www.iatspayments.com/NetGate/CustomerLink.asmx">www.iatspayments.com/NetGate/CustomerLink.asmx</a>
+* Detailed service guide: <a
+href="http://home.iatspayments.com/sites/default/files/iats_webservices_customerlink_version_4.0.pdf">home.iatspayments.com/sites/default/files/iats_webservices_customerlink_version_4.0.pdf</a></p>
+
+<h3 id="label-ProcessLink">ProcessLink</h3>
+
+<p>The ProcessLink service is used to process single, recurring and bulk
+transactions for customers. ProcessLink can also be used to refund
+transactions.</p>
+
+<p><strong>iATS documentation</strong> * Request / response overview: <a
+href="https://www.iatspayments.com/NetGate/ProcessLink.asmx">www.iatspayments.com/NetGate/ProcessLink.asmx</a>
+* Detailed service guide: <a
+href="http://home.iatspayments.com/sites/default/files/iats_webservices_processlink_version_4.0.pdf">home.iatspayments.com/sites/default/files/iats_webservices_processlink_version_4.0.pdf</a></p>
+
+<h3 id="label-ReportLink">ReportLink</h3>
+
+<p>The ReportLink service is used to generate transaction reports for the
+other services. Available reports include credit / debit card transactions,
+rejected transactions and returns.</p>
+
+<h2 id="label-Usage">Usage</h2>
+
+<h3 id="label-Use+Case+1+-+ProcessLink+-+Transaction+using+a+Credit+Card">Use Case 1 - ProcessLink - Transaction using a Credit Card</h3>
+
+<p>1) Create a Ruby file with name ProcessClient.rb.</p>
+
+<p>2) Associate your gem with ProcessClient by <code> require
+&#39;iats_payments&#39; </code> 3) Create an instance for
+ProcessLinkService as follows</p>
+
+<p>For NA region, create ProcessLinkService instance as shown below. <code>
+service = ProcessLinkService.new(nil)                                 OR
+service =
+ProcessLinkService.new(&quot;https://www.iatspayments.com/NetGate/ProcessLink.asmx&quot;);
+</code><br> For UK region, create ProcessLinkService instance with UK
+region&#39;s endpoint as shown below. <code> service =
+ProcessLinkService.new(&quot;https://www.uk.iatspayments.com/NetGate/ProcessLink.asmx&quot;);
+</code></p>
+
+<p>4) Create ProcessCreditCardV1 object and set with customer and card details
+<code>     processCard = ProcessCreditCardV1.new     processCard.agentCode
+= &quot;TEST88&quot; 	processCard.password = &quot;TEST88&quot;
+	processCard.creditCardNum = &quot;4222222222222220&quot;
+	processCard.creditCardExpiry = &quot;05/15&quot; 	processCard.cvv2 =
+&quot;123&quot; 	processCard.mop = &quot;VISA&quot; 	processCard.firstName
+= &quot;Sreekanth&quot; 	processCard.lastName = &quot;G&quot;
+	processCard.address = &quot;Uppal&quot; 	processCard.city =
+&quot;Hyd&quot; 	processCard.state = &quot;AP&quot; 	processCard.zipCode =
+&quot;1312&quot; 	processCard.total = &quot;3&quot; 	processCard.comment =
+&quot;Test&quot; </code> 5) Invoke the service and capture the response as
+follows <code>     response = service.processCreditCard(processCard)
+</code><br> 6) Verify response <code>     puts
+response.PROCESSRESULT.TRANSACTIONID, &quot;Generated Transaction Id&quot;
+</code></p>
+</div></div>
+
+    <div id="footer">
+  Generated on Tue Apr 15 21:39:51 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.4 (ruby-2.1.0).
+</div>
+
+  </body>
+</html>

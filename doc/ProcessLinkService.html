@@ -1,0 +1,1486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: ProcessLinkService
+  
+    &mdash; Documentation by YARD 0.8.7.4
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!ProcessLinkService.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (P)</a> &raquo;
+    
+    
+    <span class="title">ProcessLinkService</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: ProcessLinkService
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ProcessLinkService</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/ProcessLinkService.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createCustomerCodeAndProcessACHEFT-instance_method" title="#createCustomerCodeAndProcessACHEFT (instance method)">- (IATSResponse) <strong>createCustomerCodeAndProcessACHEFT</strong>(createCustomerCodeAndProcessACHEFTV1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Description   This service is for when you want to create a direct debit
+(ACHEFT) customer code (Recurring is set to false) and to processing an
+ACHEFT transaction at the same time.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createCustomerCodeAndProcessCreditCard-instance_method" title="#createCustomerCodeAndProcessCreditCard (instance method)">- (IATSResponse) <strong>createCustomerCodeAndProcessCreditCard</strong>(createCustomerCodeAndProcessCreditCardV1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Description   This service is for when you want to create a credit card
+customer code (Recurring is set to false) and to process a cedit card
+transaction at the same time.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getBatchProcessResultFile-instance_method" title="#getBatchProcessResultFile (instance method)">- (IATSResponse) <strong>getBatchProcessResultFile</strong>(getBatchProcessResultFileV1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Description   This service is for when you want to request the results of a
+previous batch request.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (ProcessLinkService) <strong>initialize</strong>(endpoint_url) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates instance for the specified endpoint_url.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#processACHEFT-instance_method" title="#processACHEFT (instance method)">- (IATSResponse) <strong>processACHEFT</strong>(processACHEFTV1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Description   This service is used when you want to make a transaction
+using an existing direct debit account in your system and no customer code
+is available or required.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#processACHEFTChargeBatch-instance_method" title="#processACHEFTChargeBatch (instance method)">- (IATSResponse) <strong>processACHEFTChargeBatch</strong>(processACHEFTChargeBatchV1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Description   This service is for when you wish to process ACHEFT
+transactions from more than one donor in one request.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#processACHEFTRefundBatch-instance_method" title="#processACHEFTRefundBatch (instance method)">- (IATSResponse) <strong>processACHEFTRefundBatch</strong>(processACHEFTRefundBatchV1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Description   This service is for when you wish to refund multiple ACHEFT
+transactions from more than one donor in one request.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#processACHEFTRefundWithTransactionId-instance_method" title="#processACHEFTRefundWithTransactionId (instance method)">- (IATSResponse) <strong>processACHEFTRefundWithTransactionId</strong>(processACHEFTRefundWithTransactionIdV1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Description   This service is for when you need to refund a specific
+transaction made using ACHEFT.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#processACHEFTWithCustomerCode-instance_method" title="#processACHEFTWithCustomerCode (instance method)">- (IATSResponse) <strong>processACHEFTWithCustomerCode</strong>(processACHEFTWithCustomerCodeV1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Description   This service is for when you want to process a single direct
+debit (ACHEFT) transaction with an existing customer code.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#processCreditCard-instance_method" title="#processCreditCard (instance method)">- (IATSResponse) <strong>processCreditCard</strong>(processCreditCardV1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Description   This is when you want to do a once-off credit card
+transaction without needing a customer code (token) to be used or created.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#processCreditCardBatch-instance_method" title="#processCreditCardBatch (instance method)">- (IATSResponse) <strong>processCreditCardBatch</strong>(processCreditCardBatchV1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Description   This service is for when you wish to process multiple credit
+card transactions (made on multiple credit cards) in one request.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#processCreditCardRefundWithTransactionId-instance_method" title="#processCreditCardRefundWithTransactionId (instance method)">- (IATSResponse) <strong>processCreditCardRefundWithTransactionId</strong>(processCreditCardRefundWithTransactionIdV1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Description   This service is for when you need to refund a specific
+transaction made on a credit card in your system.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#processCreditCardWithCustomerCode-instance_method" title="#processCreditCardWithCustomerCode (instance method)">- (IATSResponse) <strong>processCreditCardWithCustomerCode</strong>(processCreditCardWithCustomerCodeV1) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Description   This service is for when you want to process a single credit
+card transaction using an existing credit card customer code.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="ProcessLinkService (class)">ProcessLinkService</a></span></tt>) <strong>initialize</strong>(endpoint_url) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates instance for the specified endpoint_url. If endpoint_url is nil,
+Creates the instance for NA region.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7
+8
+9
+10</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/ProcessLinkService.rb', line 7</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_endpoint_url'>endpoint_url</span><span class='rparen'>)</span>
+	<span class='ivar'>@service</span> <span class='op'>=</span> <span class='const'>ProcessLinkSoap</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_endpoint_url'>endpoint_url</span><span class='rparen'>)</span>
+	<span class='ivar'>@service</span><span class='period'>.</span><span class='id identifier rubyid_return_response_as_xml'>return_response_as_xml</span> <span class='op'>=</span> <span class='kw'>true</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="createCustomerCodeAndProcessACHEFT-instance_method">
+  
+    - (<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>) <strong>createCustomerCodeAndProcessACHEFT</strong>(createCustomerCodeAndProcessACHEFTV1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Description</p>
+
+<pre class="code ruby"><code class="ruby">This service is for when you want to create a direct debit (ACHEFT) customer code (Recurring is set to false) and to processing an ACHEFT transaction at the same time.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>-</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="CreateCustomerCodeAndProcessACHEFTV1.html" title="CreateCustomerCodeAndProcessACHEFTV1 (class)">CreateCustomerCodeAndProcessACHEFTV1</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a
+href="https://www.iatspayments.com/NetGate/CreateCustomerCodeAndProcessACHEFTV1">www.iatspayments.com/NetGate/CreateCustomerCodeAndProcessACHEFTV1</a></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+60
+61
+62
+63
+64</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/ProcessLinkService.rb', line 60</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_createCustomerCodeAndProcessACHEFT'>createCustomerCodeAndProcessACHEFT</span><span class='lparen'>(</span><span class='id identifier rubyid_createCustomerCodeAndProcessACHEFTV1'>createCustomerCodeAndProcessACHEFTV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@service</span><span class='period'>.</span><span class='id identifier rubyid_createCustomerCodeAndProcessACHEFT'>createCustomerCodeAndProcessACHEFT</span><span class='lparen'>(</span><span class='id identifier rubyid_createCustomerCodeAndProcessACHEFTV1'>createCustomerCodeAndProcessACHEFTV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_hash'>hash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_from_xml'>from_xml</span><span class='lparen'>(</span><span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+	<span class='const'>IATSResponse</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Envelope</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Body</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>CreateCustomerCodeAndProcessACHEFTV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>CreateCustomerCodeAndProcessACHEFTV1Result</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="createCustomerCodeAndProcessCreditCard-instance_method">
+  
+    - (<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>) <strong>createCustomerCodeAndProcessCreditCard</strong>(createCustomerCodeAndProcessCreditCardV1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Description</p>
+
+<pre class="code ruby"><code class="ruby">This service is for when you want to create a credit card customer code (Recurring is set to false) and to process a cedit card transaction at the same time.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>-</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="CreateCustomerCodeAndProcessCreditCardV1.html" title="CreateCustomerCodeAndProcessCreditCardV1 (class)">CreateCustomerCodeAndProcessCreditCardV1</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a
+href="https://www.iatspayments.com/NetGate/CreateCustomerCodeAndProcessCreditCardV1">www.iatspayments.com/NetGate/CreateCustomerCodeAndProcessCreditCardV1</a></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23
+24
+25</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/ProcessLinkService.rb', line 21</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_createCustomerCodeAndProcessCreditCard'>createCustomerCodeAndProcessCreditCard</span><span class='lparen'>(</span><span class='id identifier rubyid_createCustomerCodeAndProcessCreditCardV1'>createCustomerCodeAndProcessCreditCardV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@service</span><span class='period'>.</span><span class='id identifier rubyid_createCustomerCodeAndProcessCreditCard'>createCustomerCodeAndProcessCreditCard</span><span class='lparen'>(</span><span class='id identifier rubyid_createCustomerCodeAndProcessCreditCardV1'>createCustomerCodeAndProcessCreditCardV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_hash'>hash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_from_xml'>from_xml</span><span class='lparen'>(</span><span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+	<span class='const'>IATSResponse</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Envelope</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Body</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>CreateCustomerCodeAndProcessCreditCardV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>CreateCustomerCodeAndProcessCreditCardV1Result</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getBatchProcessResultFile-instance_method">
+  
+    - (<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>) <strong>getBatchProcessResultFile</strong>(getBatchProcessResultFileV1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Description</p>
+
+<pre class="code ruby"><code class="ruby">This service is for when you want to request the results of a previous batch request.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>-</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="GetBatchProcessResultFileV1.html" title="GetBatchProcessResultFileV1 (class)">GetBatchProcessResultFileV1</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a
+href="https://www.iatspayments.com/NetGate/GetBatchProcessResultFileV1">www.iatspayments.com/NetGate/GetBatchProcessResultFileV1</a></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+164
+165
+166
+167
+168</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/ProcessLinkService.rb', line 164</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getBatchProcessResultFile'>getBatchProcessResultFile</span><span class='lparen'>(</span><span class='id identifier rubyid_getBatchProcessResultFileV1'>getBatchProcessResultFileV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@service</span><span class='period'>.</span><span class='id identifier rubyid_getBatchProcessResultFile'>getBatchProcessResultFile</span><span class='lparen'>(</span><span class='id identifier rubyid_getBatchProcessResultFileV1'>getBatchProcessResultFileV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_hash'>hash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_from_xml'>from_xml</span><span class='lparen'>(</span><span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+	<span class='const'>IATSResponse</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Envelope</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Body</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetBatchProcessResultFileV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetBatchProcessResultFileV1Result</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="processACHEFT-instance_method">
+  
+    - (<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>) <strong>processACHEFT</strong>(processACHEFTV1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Description</p>
+
+<pre class="code ruby"><code class="ruby">This service is used when you want to make a transaction using an existing direct debit account in your system and no customer code is available or required.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>-</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ProcessACHEFTV1.html" title="ProcessACHEFTV1 (class)">ProcessACHEFTV1</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a
+href="https://www.iatspayments.com/NetGate/ProcessACHEFTV1">www.iatspayments.com/NetGate/ProcessACHEFTV1</a></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+86
+87
+88
+89
+90</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/ProcessLinkService.rb', line 86</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_processACHEFT'>processACHEFT</span><span class='lparen'>(</span><span class='id identifier rubyid_processACHEFTV1'>processACHEFTV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@service</span><span class='period'>.</span><span class='id identifier rubyid_processACHEFT'>processACHEFT</span><span class='lparen'>(</span><span class='const'>ProcessACHEFTV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_hash'>hash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_from_xml'>from_xml</span><span class='lparen'>(</span><span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+	<span class='const'>IATSResponse</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Envelope</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Body</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessACHEFTV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessACHEFTV1Result</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="processACHEFTChargeBatch-instance_method">
+  
+    - (<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>) <strong>processACHEFTChargeBatch</strong>(processACHEFTChargeBatchV1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Description</p>
+
+<pre class="code ruby"><code class="ruby">This service is for when you wish to process ACHEFT transactions from more than one donor in one request.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>-</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ProcessACHEFTChargeBatchV1.html" title="ProcessACHEFTChargeBatchV1 (class)">ProcessACHEFTChargeBatchV1</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a
+href="https://www.iatspayments.com/NetGate/ProcessACHEFTChargeBatchV1">www.iatspayments.com/NetGate/ProcessACHEFTChargeBatchV1</a></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+138
+139
+140
+141
+142</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/ProcessLinkService.rb', line 138</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_processACHEFTChargeBatch'>processACHEFTChargeBatch</span><span class='lparen'>(</span><span class='id identifier rubyid_processACHEFTChargeBatchV1'>processACHEFTChargeBatchV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@service</span><span class='period'>.</span><span class='id identifier rubyid_processACHEFTChargeBatch'>processACHEFTChargeBatch</span><span class='lparen'>(</span><span class='id identifier rubyid_processACHEFTChargeBatchV1'>processACHEFTChargeBatchV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_hash'>hash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_from_xml'>from_xml</span><span class='lparen'>(</span><span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+	<span class='const'>IATSResponse</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Envelope</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Body</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessACHEFTChargeBatchV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessACHEFTChargeBatchV1Result</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="processACHEFTRefundBatch-instance_method">
+  
+    - (<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>) <strong>processACHEFTRefundBatch</strong>(processACHEFTRefundBatchV1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Description</p>
+
+<pre class="code ruby"><code class="ruby">This service is for when you wish to refund multiple ACHEFT transactions from more than one donor in one request</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>-</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ProcessACHEFTRefundBatchV1.html" title="ProcessACHEFTRefundBatchV1 (class)">ProcessACHEFTRefundBatchV1</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a
+href="https://www.iatspayments.com/NetGate/ProcessACHEFTRefundBatchV1">www.iatspayments.com/NetGate/ProcessACHEFTRefundBatchV1</a></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+151
+152
+153
+154
+155</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/ProcessLinkService.rb', line 151</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_processACHEFTRefundBatch'>processACHEFTRefundBatch</span><span class='lparen'>(</span><span class='id identifier rubyid_processACHEFTRefundBatchV1'>processACHEFTRefundBatchV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@service</span><span class='period'>.</span><span class='id identifier rubyid_processACHEFTRefundBatch'>processACHEFTRefundBatch</span><span class='lparen'>(</span><span class='id identifier rubyid_processACHEFTWithCustomerCodeV1'>processACHEFTWithCustomerCodeV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_hash'>hash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_from_xml'>from_xml</span><span class='lparen'>(</span><span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+	<span class='const'>IATSResponse</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Envelope</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Body</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessACHEFTRefundBatchV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessACHEFTRefundBatchV1Result</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="processACHEFTRefundWithTransactionId-instance_method">
+  
+    - (<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>) <strong>processACHEFTRefundWithTransactionId</strong>(processACHEFTRefundWithTransactionIdV1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Description</p>
+
+<pre class="code ruby"><code class="ruby">This service is for when you need to refund a specific transaction made using ACHEFT.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>-</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ProcessACHEFTRefundWithTransactionIdV1.html" title="ProcessACHEFTRefundWithTransactionIdV1 (class)">ProcessACHEFTRefundWithTransactionIdV1</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a
+href="https://www.iatspayments.com/NetGate/ProcessACHEFTRefundWithTransactionIdV1">www.iatspayments.com/NetGate/ProcessACHEFTRefundWithTransactionIdV1</a></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+112
+113
+114
+115
+116</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/ProcessLinkService.rb', line 112</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_processACHEFTRefundWithTransactionId'>processACHEFTRefundWithTransactionId</span><span class='lparen'>(</span><span class='id identifier rubyid_processACHEFTRefundWithTransactionIdV1'>processACHEFTRefundWithTransactionIdV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@service</span><span class='period'>.</span><span class='id identifier rubyid_processACHEFTRefundWithTransactionId'>processACHEFTRefundWithTransactionId</span><span class='lparen'>(</span><span class='id identifier rubyid_processACHEFTRefundWithTransactionIdV1'>processACHEFTRefundWithTransactionIdV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_hash'>hash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_from_xml'>from_xml</span><span class='lparen'>(</span><span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+	<span class='const'>IATSResponse</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Envelope</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Body</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessACHEFTRefundWithTransactionIdV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessACHEFTRefundWithTransactionIdV1Result</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="processACHEFTWithCustomerCode-instance_method">
+  
+    - (<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>) <strong>processACHEFTWithCustomerCode</strong>(processACHEFTWithCustomerCodeV1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Description</p>
+
+<pre class="code ruby"><code class="ruby">This service is for when you want to process a single direct debit (ACHEFT) transaction with an existing customer code.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>-</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ProcessACHEFTWithCustomerCodeV1.html" title="ProcessACHEFTWithCustomerCodeV1 (class)">ProcessACHEFTWithCustomerCodeV1</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a
+href="https://www.iatspayments.com/NetGate/ProcessACHEFTWithCustomerCodeV1">www.iatspayments.com/NetGate/ProcessACHEFTWithCustomerCodeV1</a></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+73
+74
+75
+76
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/ProcessLinkService.rb', line 73</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_processACHEFTWithCustomerCode'>processACHEFTWithCustomerCode</span><span class='lparen'>(</span><span class='id identifier rubyid_processACHEFTWithCustomerCodeV1'>processACHEFTWithCustomerCodeV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@service</span><span class='period'>.</span><span class='id identifier rubyid_processACHEFTWithCustomerCode'>processACHEFTWithCustomerCode</span><span class='lparen'>(</span><span class='id identifier rubyid_processACHEFTWithCustomerCodeV1'>processACHEFTWithCustomerCodeV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_hash'>hash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_from_xml'>from_xml</span><span class='lparen'>(</span><span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+	<span class='const'>IATSResponse</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Envelope</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Body</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessACHEFTWithCustomerCodeV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessACHEFTWithCustomerCodeV1Result</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="processCreditCard-instance_method">
+  
+    - (<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>) <strong>processCreditCard</strong>(processCreditCardV1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Description</p>
+
+<pre class="code ruby"><code class="ruby">This is when you want to do a once-off credit card transaction without needing a customer code (token) to be used or created.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>-</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ProcessCreditCardV1.html" title="ProcessCreditCardV1 (class)">ProcessCreditCardV1</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a
+href="https://www.iatspayments.com/NetGate/ProcessCreditCardV1">www.iatspayments.com/NetGate/ProcessCreditCardV1</a></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+47
+48
+49
+50
+51</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/ProcessLinkService.rb', line 47</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_processCreditCard'>processCreditCard</span><span class='lparen'>(</span><span class='id identifier rubyid_processCreditCardV1'>processCreditCardV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@service</span><span class='period'>.</span><span class='id identifier rubyid_processCreditCard'>processCreditCard</span><span class='lparen'>(</span><span class='id identifier rubyid_processCreditCardV1'>processCreditCardV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_hash'>hash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_from_xml'>from_xml</span><span class='lparen'>(</span><span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+	<span class='const'>IATSResponse</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Envelope</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Body</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessCreditCardV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessCreditCardV1Result</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="processCreditCardBatch-instance_method">
+  
+    - (<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>) <strong>processCreditCardBatch</strong>(processCreditCardBatchV1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Description</p>
+
+<pre class="code ruby"><code class="ruby">This service is for when you wish to process multiple credit card transactions (made on multiple credit cards) in one request.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>-</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ProcessCreditCardBatchV1.html" title="ProcessCreditCardBatchV1 (class)">ProcessCreditCardBatchV1</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a
+href="https://www.iatspayments.com/NetGate/ProcessCreditCardBatchV1">www.iatspayments.com/NetGate/ProcessCreditCardBatchV1</a></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+125
+126
+127
+128
+129</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/ProcessLinkService.rb', line 125</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_processCreditCardBatch'>processCreditCardBatch</span><span class='lparen'>(</span><span class='id identifier rubyid_processCreditCardBatchV1'>processCreditCardBatchV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@service</span><span class='period'>.</span><span class='id identifier rubyid_processCreditCardBatch'>processCreditCardBatch</span><span class='lparen'>(</span><span class='id identifier rubyid_processCreditCardBatchV1'>processCreditCardBatchV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_hash'>hash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_from_xml'>from_xml</span><span class='lparen'>(</span><span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+	<span class='const'>IATSResponse</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Envelope</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Body</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessCreditCardBatchV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessCreditCardBatchV1Result</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="processCreditCardRefundWithTransactionId-instance_method">
+  
+    - (<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>) <strong>processCreditCardRefundWithTransactionId</strong>(processCreditCardRefundWithTransactionIdV1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Description</p>
+
+<pre class="code ruby"><code class="ruby">This service is for when you need to refund a specific transaction made on a credit card in your system.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>-</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ProcessCreditCardRefundWithTransactionIdV1.html" title="ProcessCreditCardRefundWithTransactionIdV1 (class)">ProcessCreditCardRefundWithTransactionIdV1</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a
+href="https://www.iatspayments.com/NetGate/ProcessCreditCardRefundWithTransactionIdV1">www.iatspayments.com/NetGate/ProcessCreditCardRefundWithTransactionIdV1</a></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+99
+100
+101
+102
+103</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/ProcessLinkService.rb', line 99</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_processCreditCardRefundWithTransactionId'>processCreditCardRefundWithTransactionId</span><span class='lparen'>(</span><span class='id identifier rubyid_processCreditCardRefundWithTransactionIdV1'>processCreditCardRefundWithTransactionIdV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@service</span><span class='period'>.</span><span class='id identifier rubyid_processCreditCardRefundWithTransactionId'>processCreditCardRefundWithTransactionId</span><span class='lparen'>(</span><span class='id identifier rubyid_processCreditCardRefundWithTransactionIdV1'>processCreditCardRefundWithTransactionIdV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_hash'>hash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_from_xml'>from_xml</span><span class='lparen'>(</span><span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+	<span class='const'>IATSResponse</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Envelope</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Body</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessCreditCardRefundWithTransactionIdV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessCreditCardRefundWithTransactionIdV1Result</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="processCreditCardWithCustomerCode-instance_method">
+  
+    - (<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>) <strong>processCreditCardWithCustomerCode</strong>(processCreditCardWithCustomerCodeV1) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Description</p>
+
+<pre class="code ruby"><code class="ruby">This service is for when you want to process a single credit card transaction using an existing credit card customer code.</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>-</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ProcessCreditCardWithCustomerCodeV1.html" title="ProcessCreditCardWithCustomerCodeV1 (class)">ProcessCreditCardWithCustomerCodeV1</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a
+href="https://www.iatspayments.com/NetGate/ProcessCreditCardWithCustomerCodeV1">www.iatspayments.com/NetGate/ProcessCreditCardWithCustomerCodeV1</a></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IATSResponse.html" title="IATSResponse (class)">IATSResponse</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+34
+35
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/ProcessLinkService.rb', line 34</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_processCreditCardWithCustomerCode'>processCreditCardWithCustomerCode</span><span class='lparen'>(</span><span class='id identifier rubyid_processCreditCardWithCustomerCodeV1'>processCreditCardWithCustomerCodeV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='ivar'>@service</span><span class='period'>.</span><span class='id identifier rubyid_processCreditCardWithCustomerCode'>processCreditCardWithCustomerCode</span><span class='lparen'>(</span><span class='id identifier rubyid_processCreditCardWithCustomerCodeV1'>processCreditCardWithCustomerCodeV1</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_hash'>hash</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_from_xml'>from_xml</span><span class='lparen'>(</span><span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span>
+	<span class='const'>IATSResponse</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_hash'>hash</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Envelope</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Body</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessCreditCardWithCustomerCodeV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ProcessCreditCardWithCustomerCodeV1Result</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Tue Apr 15 21:39:58 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.4 (ruby-2.1.0).
+</div>
+
+  </body>
+</html>

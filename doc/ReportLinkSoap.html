@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: ReportLinkSoap
+  
+    &mdash; Documentation by YARD 0.8.7.4
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!ReportLinkSoap.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (R)</a> &raquo;
+    
+    
+    <span class="title">ReportLinkSoap</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: ReportLinkSoap
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">SOAP::RPC::Driver</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">SOAP::RPC::Driver</li>
+          
+            <li class="next">ReportLinkSoap</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/defaultDriver.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Begin ReportLink</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="DefaultEndpointUrl-constant" class="">DefaultEndpointUrl =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/ReportLink.asmx</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+      
+        <dt id="Methods-constant" class="">Methods =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetCCJournalCSV V1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getCCJournalCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCCJournalCSV_x0020_V1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCCJournalCSV_x0020_V1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetCreditCardJournalCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getCreditCardJournalCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardJournalCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardJournalCSVV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetCreditCardJournalV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getCreditCardJournal</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardJournalV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardJournalV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetCreditCardRejectCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getCreditCardRejectCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardRejectCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardRejectCSVV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetCreditCardRejectV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getCreditCardReject</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardRejectV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardRejectV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetACHJournalCSV V1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getACHJournalCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHJournalCSV_x0020_V1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHJournalCSV_x0020_V1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetACHEFTJournalCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getACHEFTJournalCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTJournalCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTJournalCSVV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetACHEFTJournalV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getACHEFTJournal</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTJournalV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTJournalV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetACHEFTRejectCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getACHEFTRejectCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTRejectCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTRejectCSVV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetACHEFTRejectV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getACHEFTReject</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTRejectV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTRejectV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetACHEFTReturnCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getACHEFTReturnCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTReturnCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTReturnCSVV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetACHEFTReturnV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getACHEFTReturn</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTReturnV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTReturnV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetCCPaymentBoxJournalCSV V1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getCCPaymentBoxJournalCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCCPaymentBoxJournalCSV_x0020_V1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCCPaymentBoxJournalCSV_x0020_V1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetCreditCardPaymentBoxJournalCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getCreditCardPaymentBoxJournalCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardPaymentBoxJournalCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardPaymentBoxJournalCSVV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetCreditCardPaymentBoxRejectCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getCreditCardPaymentBoxRejectCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardPaymentBoxRejectCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardPaymentBoxRejectCSVV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetACHEFTPaymentBoxJournalCSV V1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getACHEFTPaymentBoxJournalCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTPaymentBoxJournalCSV_x0020_V1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTPaymentBoxJournalCSV_x0020_V1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetACHEFTPaymentBoxJournalCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getACHEFTPaymentBoxJournalCSV_2</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTPaymentBoxJournalCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTPaymentBoxJournalCSVV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetACHEFTPaymentBoxRejectCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getACHEFTPaymentBoxRejectCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTPaymentBoxRejectCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTPaymentBoxRejectCSVV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetCreditCardBankReconciliationReportCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getCreditCardBankReconciliationReportCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardBankReconciliationReportCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetCreditCardBankReconciliationReportCSVV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/GetACHEFTBankReconciliationReportCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>getACHEFTBankReconciliationReportCSV</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='lbracket'>[</span> <span class='lbracket'>[</span><span class='symbol'>:in</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTBankReconciliationReportCSVV1</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='lbracket'>[</span><span class='symbol'>:out</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>parameters</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>::SOAP::SOAPElement</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.iatspayments.com/NetGate/</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GetACHEFTBankReconciliationReportCSVV1Response</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rbracket'>]</span> <span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span> <span class='symbol'>:request_style</span> <span class='op'>=&gt;</span>  <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:request_use</span> <span class='op'>=&gt;</span>  <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:response_style</span> <span class='op'>=&gt;</span> <span class='symbol'>:document</span><span class='comma'>,</span> <span class='symbol'>:response_use</span> <span class='op'>=&gt;</span> <span class='symbol'>:literal</span><span class='comma'>,</span>
+      <span class='symbol'>:faults</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rbrace'>}</span>
+  <span class='rbracket'>]</span>
+<span class='rbracket'>]</span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (ReportLinkSoap) <strong>initialize</strong>(endpoint_url = nil) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of ReportLinkSoap.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="ReportLinkSoap (class)">ReportLinkSoap</a></span></tt>) <strong>initialize</strong>(endpoint_url = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of ReportLinkSoap</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+395
+396
+397
+398
+399
+400
+401</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/defaultDriver.rb', line 395</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_endpoint_url'>endpoint_url</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_endpoint_url'>endpoint_url</span> <span class='op'>||=</span> <span class='const'>DefaultEndpointUrl</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_endpoint_url'>endpoint_url</span><span class='comma'>,</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_mapping_registry'>mapping_registry</span> <span class='op'>=</span> <span class='const'>DefaultMappingRegistry</span><span class='op'>::</span><span class='const'>EncodedRegistry</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_literal_mapping_registry'>literal_mapping_registry</span> <span class='op'>=</span> <span class='const'>DefaultMappingRegistry</span><span class='op'>::</span><span class='const'>LiteralRegistry</span>
+  <span class='id identifier rubyid_init_methods'>init_methods</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+</div>
+
+    <div id="footer">
+  Generated on Tue Apr 15 21:39:52 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.4 (ruby-2.1.0).
+</div>
+
+  </body>
+</html>
