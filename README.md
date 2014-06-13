@@ -22,6 +22,23 @@ Execute below commands in command prompt or Terminal for installing GEM -
 
 Once soap4r gem installed successfully. Execute the below commands.
 
+`$ gem install mumboe-soap4r` 
+
+While we are installing above gem it will prompt for below actions.
+
+`mumboe-soap4r's executable "wsdl2ruby.rb" conflicts with soap4r`
+
+`Overwrite the executable? [yN]` 
+
+Please press y and hit enter.
+
+`mumboe-soap4r's executable "xsd2ruby.rb" conflicts with soap4r`  
+
+`Overwrite the executable? [yN]` 
+
+Please press y and hit enter.
+
+
 `$ git clone https://github.com/iATSPayments/Ruby.git`
 
 `$ cd Ruby/Gem/`
@@ -104,3 +121,11 @@ service = ProcessLinkService.new("https://www.uk.iatspayments.com/NetGate/Proces
 ```
     puts response.PROCESSRESULT.TRANSACTIONID, "Generated Transaction Id"
 ```
+
+Note: If you get any error like "XML processor module not found". Then follow the below steps.
+
+1) Open the xmlparser.rb file.
+
+2) Search for the word ` c.downcase` in the above file and replace `c.to_s.downcase`
+
+3) Try running iats client ruby file again.
