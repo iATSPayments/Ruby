@@ -30,13 +30,13 @@ While we are installing above gem it will prompt for below actions.
 
 `Overwrite the executable? [yN]` 
 
-Please press y and hit enter.
+Press y and hit enter.
 
 `mumboe-soap4r's executable "xsd2ruby.rb" conflicts with soap4r`  
 
 `Overwrite the executable? [yN]` 
 
-Please press y and hit enter.
+Press y and hit enter.
 
 
 `$ git clone https://github.com/iATSPayments/Ruby.git`
